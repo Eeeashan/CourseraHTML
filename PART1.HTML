@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dating Web Site</title>
+    </head>
+<body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Your Face</legend>
+            <lable for="face">Your Image:</lable><input type="file" name= "image" required><br>
+            <lable for="ImagePreview">Image Preview:</lable>
+        </fieldset>
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name:">Name:</label><input type="text" name="name" required><br>
+            Gender:<input type="radio" name="gender" value="Male" required><label for="male:">Male:</label>
+            <input type="radio" name="gender" value="female" required><label for="female:">Female:</label><br>
+            <label for="age:">Age:</label><input type="number" name="age" required><br>
+            <label for="dateofbirth:">Date of Birth:</label><input type="date" name="dof" required><br>
+            <label for="Favoritecolor">Favorite Color:</label>:<input type="color" name="fevcolor"><br>
+            <label for="WhichCountry">Which Country:</label>
+            <select>
+                
+                <option value="bangladesh">Bangladesh</option>
+                <option value="usa">USA</option>
+                <option value="russia">Russia</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="none" selected>No Selection</option>
+                                  
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label>Short<input type="range" min="0" max="100">Long<br>
+            <label for="Salary">Salary:</label>Poor<input type="range" min="0" max="100">Rich
+        </fieldset>
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="Email">Email:</label><input type="email" name="mail" required><br>
+            <label for="Mobile">Mobile:</label><input type="tel" name="mobileno"><br>
+            <label for="Address">Address:</label><input type="texta"><br>
+            <label for="contact">Method to contact you:</label><input type="checkbox" name="contact" value="Email">Email
+                                  <input type="checkbox" name="contact" value="whatsapp">Whats App
+                                  <input type="checkbox" name="contact" value="In-appchat">In-app Chat
+        </fieldset>
+        <input type="submit" name="submit" value="Submit">
+    
+    </form> 
+
+</body>
+</html>
