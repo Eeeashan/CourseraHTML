@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dating Web Site</title>
+        <style>
+            
+            fieldset{
+                background-color: lightyellow;
+                border:10px solid yellow;
+                margin-bottom:10px;
+                width: 720px;
+            }
+            
+            label{
+                width: 180px;
+                display:inline-block;
+                text-align: right;
+                vertical-align: top;
+            }
+            label:hover{
+                
+                font-size: 1.4em;
+            }
+                       
+            #box{
+                width: auto;
+            }
+            
+            textarea{
+                width:360px;
+                height:50px
+            }
+            .span-red {
+			min-width: 100px;
+			padding: 10px;
+			color:#fff;
+			background-color: lightgreen;
+            }
+            .span-gray {
+			padding: 10px;
+			color: #fff;
+			background-color: grey;
+            }
+        </style>
+    
+    
+    </head>
+<body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="photo">Upload Image:</label><input type="file" name="image"><br>
+            <label for="img">Preview Image:</label><img name="img" src="" alt="" id="preview" width="200px">
+        </fieldset>
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name">Name:</label><input type="text" name="name" required><br>
+            <label for="Gender">Gender:</label><input id="box" type="radio" name="gender" value="male" required>Male
+                    <input id="box" type="radio" name="gender" value="female" required>Female<br>
+            <label for="age:">Age:</label><input type="number" name="age" required><br>
+            <label for="dateofbirth:">Date of Birth:</label><input type="date" name="dof" required><br>
+            <label for="Favoritecolor">Favorite Color:</label><input type="color" name="fevcolor"><br>
+            <label for="WhichCountry">Which Country:</label>
+            <select>
+                
+                <option value="bangladesh">Bangladesh</option>
+                <option value="usa">USA</option>
+                <option value="russia">Russia</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="none" selected>No Selection</option>
+                                  
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label><span class="span-red">Short</span><input type="range" min="0" max="100"><span class="span-gray">Long</span><br>
+            <label for="Salary">Salary:</label><span class="span-red">Poor</span><input type="range" min="0" max="100"><span class="span-gray">Rich</span>
+        </fieldset>
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="Email">Email:</label><input type="email" name="mail" required><br>
+            <label for="Mobile">Mobile:</label><input type="tel" name="mobileno"><br>
+            <label for="Address">Address:</label> <textarea></textarea><br>
+            <label for="contact">Method to contact you:</label>
+                                  <input id="box" type="checkbox" name="contact" value="Email">Email
+                                  <input id="box" type="checkbox" name="contact" value="whatsapp">Whats App
+                                  <input id="box" type="checkbox" name="contact" value="In-appchat">In-app Chat
+        </fieldset>
+        <input type="submit" name="submit" value="Submit">
+    
+    </form> 
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>
